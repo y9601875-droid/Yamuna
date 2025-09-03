@@ -1,0 +1,122 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background and text styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #2c3e50; /* Background color */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Container for the entire portfolio */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* About Section */
+#about {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.2rem;
+}
+
+#skills li {
+    background: #34495e;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* Projects Section */
+#projects {
+    margin-bottom: 40px;
+}
+
+.project-card {
+    background: #34495e;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Section */
+#contact a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Animation Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Small screen styling */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 0.9rem;
+    }
+
+    #skills ul {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
